@@ -1,0 +1,22 @@
+import React from "react";
+
+function Header(props) {
+  return (
+    <div className="header">
+      <div className="header-logo">
+        <img src="data:image/png;base64,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"></img>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Email</li>
+        <li className="header-cart">
+          Cart <span className="header-cart-number">{props.cart}</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+export default Header;
